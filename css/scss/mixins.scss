@@ -1,0 +1,17 @@
+@mixin grid($cols, $margin) {
+  float: right;
+  margin-right: $margin;
+  width: ((100% - (($cols - 1) * $margin)) / $cols);
+  &:nth-child(#{$cols}n) {
+    margin-right: 0;
+  }
+}
+
+@mixin grid2($cols, $margin) {
+  float: right;
+  margin-right: $margin;
+  width: ((100% - (($cols + 1) * $margin)) / $cols);
+  &:nth-child(#{$cols}n) {
+
+  }
+}

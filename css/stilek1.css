@@ -1,0 +1,44 @@
+body {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+.container {
+	width: 1582px;
+	margin: 0 auto;
+}
+div {
+	box-sizing: border-box;
+}
+header {
+width: 1252px;
+height: 92px;
+background-color: #000000;
+opacity: 0.8;
+}
+nav {
+	float: right;
+	margin-top: 50px;
+}
+.menu {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+.menu a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 41px;
+}

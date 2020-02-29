@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Our Strong Organization</title>
-	<link rel="stylesheet" href="css/scss/stilek.css">
+	<link rel="stylesheet" href="css/scss/style.css">
 	<script>
 	function isEmail() {
-	let str = document.getElementById("email").value;
-	let re = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
-	if (re.test(str)) status.innerHTML = alert('Спасибо за подписку!');
-	else status.innerHTML = alert('Надо ввести почту!)');
-	if(isEmpty(str)) status.innerHTML = alert('Вы ничего не ввели...');
+		let str = document.getElementById("email").value;
+		let re = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+		if (re.test(str)) status.innerHTML = alert('Спасибо за подписку!');
+		else status.innerHTML = alert('Надо ввести почту!)');
+		if (isEmpty(str)) status.innerHTML = alert('Вы ничего не ввели...');
 	}
 	function isEmpty(str){
-	return (str === null) || (str.length === 0);
+		return (str === null) || (str.length === 0);
 	}
 	</script>
 

@@ -35,14 +35,15 @@ header {
   display: block;
   padding: 0;
   margin: 0;
+
+  li {
+    float: left;
+    display: block;
+    margin-right: 41px;
+    margin-top: 45px;
+}
 }
 
-.menu li {
-  float: left;
-  display: block;
-  margin-right: 41px;
-  margin-top: 45px;
-}
 #redbox {
   background-color: red;
   padding: 46px 25px 36px 25px;
@@ -101,12 +102,13 @@ hr {
   display: block;
   padding-bottom: 100px;
   margin: 0;
+
+  li {
+    float: left;
+    display: block;
+    margin-right: 40px;
+    margin-top: 45px;
 }
-.menu2 li {
-  float: left;
-  display: block;
-  margin-right: 40px;
-  margin-top: 45px;
 }
 
 .grid_box {
@@ -120,24 +122,26 @@ hr {
     box-sizing: border-box;
 
   }
-}
 
-.grid2 .products {
-  width: 20%;
+  .products {
+    width: 20%;
+}
 }
 
 .products {
   margin: 12px;
+
+  img {
+    height: 250px;
+    width: 250px;
+    margin: 0;
+}
 }
 
-.products img {
-  height: 250px;
-  width: 250px;
-  margin: 0;
-}
 .boxes hr {
   float: left;
 }
+
 .longbox {
   background-color: #f5f0dd;
   height: 400px;
@@ -159,7 +163,7 @@ hr {
   margin-top: 15px;
   margin-left: -35px;
 }
-.team_img	{
+.team_img {
   background-color: #f5f0dd;
   margin: 5px;
   height: 150px;
@@ -167,21 +171,18 @@ hr {
   margin-top: 95px;
   position: relative;
   padding-top: 125px;
+
+  img {
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    margin-top: -125px;
+  }
 }
-.team_img img {
-  height: 150px;
-  width: 150px;
-  margin: 0;
-  margin-top: -125px;
-}
+
 .table {
   margin-left: -5px;
 
-}
-
-#deli {
-  background-color: #f5f0dd;
-  
 }
 
 input {
@@ -193,12 +194,17 @@ input {
   outline: none;
 }
 
-#deli form {
-  padding-bottom: 100px;
-  margin-left: 15%;
-  vertical-align: center;
-  display: inline-block;
+#deli {
+  background-color: #f5f0dd;
+
+  form {
+    padding-bottom: 100px;
+    margin-left: 15%;
+    vertical-align: center;
+    display: inline-block;
+  }
 }
+
 .getin input {
   margin: 50px 120px 30px -100px;
   float: left;
@@ -231,14 +237,21 @@ input {
   width: 100%;
   height: 90px;
   margin-top: 500px;
+
+  .links {
+    float: right;
+    margin-top: -75px;
+    padding-right: 120px;
+
+      img {
+        height: 30px;
+        width: 30px;
+        margin: 0;
+        padding-right: 10px;
+    }
+  }
 }
 
-.footer .links {
-  float: right;
-  margin-top: -75px;
-  padding-right: 120px;
-
-}
 .links img {
   height: 30px;
   width: 30px;

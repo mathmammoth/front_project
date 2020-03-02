@@ -4,18 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Our Strong Organization</title>
 	<link rel="stylesheet" href="css/scss/style.css">
-	<script>
-	function isEmail() {
-		let str = document.getElementById("email").value;
-		let re = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
-		if (re.test(str)) status.innerHTML = alert('Спасибо за подписку!');
-		else status.innerHTML = alert('Надо ввести почту!)');
-		if (isEmpty(str)) status.innerHTML = alert('Вы ничего не ввели...');
-	}
-	function isEmpty(str){
-		return (str === null) || (str.length === 0);
-	}
-	</script>
+
+	<script src="index.js"></script>
+
 
 
 </head>
@@ -137,10 +128,10 @@
 	</div>
 	<div class="container" id="deli">
 		<h5>Design tips, tricks, and freebies. Delivered weekly.</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
-		<form action="">
-		<input id="email" type="email" name="Email" value=" Email Address..." onfocus="this.value=''">
-		<input type="submit" class="subscribe" href="" value="SUBSCRIBE" onclick="isEmail ()">
+			<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
+		<form>
+			<input id="email" type="email" name="Email" value="Email Address..." onfocus="this.value=''">
+			<input class="subscribe" type="button" value="SUBSCRIBE" onclick="isEmail ()">
 		</form>
 	</div>
 	<div class="container">
@@ -150,11 +141,11 @@
 
 		<hr class="line">
 
-		<form action="submit" class="getin">
-			<input type="name" value="Name" onfocus="this.value=''">
-			<input type="email" value=" Your Mail"  onfocus="this.value=''">
-			<input type="text" value="Type Your Message" class="message" onfocus="this.value=''" >
-			<input type="submit" class="send_button" value="SEND MESSAGE">
+		<form class="getin">
+			<input id="name" type="name" value="Name" onfocus="this.value=''">
+			<input id="your_mail" type="email" value="Your Mail"  onfocus="this.value=''">
+			<input id="text" type="text" value="Type Your Message" class="message" onfocus="this.value=''" >
+			<input type="button" class="send_button" value="SEND MESSAGE" onclick="isMessage ()">
 		</form>
 			<div class="contact">
 				<h6>contact info</h6>

@@ -131,7 +131,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
 		<form>
 			<input id="email" type="email" name="Email" value="Email Address..." onfocus="this.value=''">
-			<input class="subscribe" type="button" value="SUBSCRIBE" onclick="isEmail ()">
+			<input class="subscribe" type="button" value="SUBSCRIBE" onclick="isEmail()">
 		</form>
 	</div>
 	<div class="container">
@@ -142,10 +142,10 @@
 		<hr class="line">
 
 		<form class="getin">
-			<input id="name" type="name" value="Name" onfocus="this.value=''">
-			<input id="your_mail" type="email" value="Your Mail"  onfocus="this.value=''">
-			<input id="text" type="text" value="Type Your Message" class="message" onfocus="this.value=''" >
-			<input type="button" class="send_button" value="SEND MESSAGE" onclick="isMessage ()">
+			<input id="name" type="name" value="Name" onfocus="this.value=''" data-validate>
+			<input id="your_mail" type="email" value="Your Mail"  onfocus="this.value=''" data-validate>
+			<input id="text" type="text" value="Type Your Message" class="message" onfocus="this.value=''" data-validate>
+			<input type="button" class="send_button" value="SEND MESSAGE" onclick="isMessage()">
 		</form>
 			<div class="contact">
 				<h6>contact info</h6>

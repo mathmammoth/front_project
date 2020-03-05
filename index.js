@@ -13,7 +13,7 @@ function isMessage() {
     let name = document.getElementById("name").value;
     let your = document.getElementById("your_mail").value;
     let text = document.getElementById("text").value;
-    let re = /^[[а-яА-ЯёЁ]]{2,64}$/;
+    let re = /^[а-яА-ЯёЁ a-z]{2,}$/i;
     let de = /^[^\s()<>@,;:\/]+@\w[\w\-]+\.[a-z]{2,}$/i;
     if (re.test(name)) status.innerHTML = true;
     else if (de.test(your)) status.innerHTML = true;
@@ -23,6 +23,9 @@ function isMessage() {
     if (isEmptey(your)) status.innerHTML = alert('Заполните форму!');
 }
 
+
 function isEmptey(your){
     return (your === null) || (your.length === 0);
 }
+
+

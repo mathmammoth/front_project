@@ -9,6 +9,8 @@ function isEmpty(str){
     return (str === null) || (str.length === 0);
 }
 
+
+
 function isMessage() {
     let name = document.getElementById("name").value;
     let your = document.getElementById("your_mail").value;
